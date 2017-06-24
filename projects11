@@ -1,0 +1,61 @@
+                               Project11
+
+
+1- Basics concepts
+
+a- What is a DevOps? DevOps is the practice of Development and Operations engineers participating together in the entire service lifecycle, from design through the development process to production support. It came as a result of the collision of two trends – the agile operations and the collaboration between development and operations staff throughout all stages of the development lifecycle when creating and operating a service.
+1)	b- What is GIT? Git is a free and open source distributed version control system used in software development designed to handle everything from small to very large projects with speed and efficiency.
+
+
+c- what is the difference between git ans svn? The main difference is that CVS is (old) centralized version control system, while Git is distributed. Many other differences may include:
+•	- Setting up repository. Git stores repository in .git directory in top directory of your project; CVS require setting up CVSROOT, a central place for storing version control info for different projects (modules). The consequence of that design for user is that importing existing sources into version control is as simple as "git init && git add . && git commit" in Git, while it is more complicated in CVS.
+•	Changesets. Changes in CVS are per file, while changes (commits) in Git they always refer to the whole project. This is very important paradigm shift. One of consequences of this is that it is very easy in Git to revert (create a change that undoes) or undo whole change; other consequence is that in CVS is easy to do partial checkouts, while it is currently next to impossible in Git
+Rename (and copy) tracking. File renames are not supported in CVS, and manual renaming might break history in two, or lead to invalid history where you cannot correctly recover the state of a project before rename. Git uses heuristic rename detection, based on similarity of contents and filename (This solution works well in practice). You can also request detecting of copying of files. This means that:
+•	when examining specified commit you would get information that some file was renamed,
+•	merging correctly takes renames into account (for example if the file was renamed only in one branch)
+•	"git blame", the (better) equivalent of "cvs annotate", a tool to show line-wise history of a file contents, can follow code movement also across renames
+
+2)	d- what continious integration? ): Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early. By integrating regularly, you can detect errors quickly, and locate them more easily.
+Continuous Integration is backed by several important principles and practices like:
+•	Maintain a single source repository
+•	Automate the build
+•	Make your build self-testing
+•	Every commit should build on an integration machine
+•	etc
+
+e- what is continious delevery? It is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time.
+f- what is scrum? Scrum is an Agile framework for completing complex projects. Scrum originally was formalized for software development projects, but it works well for any complex, innovative scope of work. The possibilities are endless. The Scrum framework is deceptively simple.
+The three roles defined in Scrum are the ScrumMaster, the Product Owner, and the Team (which consists of Team members). The people who fulfill these roles work together closely, on a daily basis, to ensure the smooth flow of information and the quick resolution of issues.
+The scrummaster is responsible for making the process run smoothly, for removing obstacles that impact productivity, and for organizing and facilitating the critical meetings. The ScrumMasters responsibilities include
+The Product Owner is the keeper of the requirements. He provides the “single source of truth” for the Team regarding requirements and their planned order of implementation. In practice, the Product Owner is the interface between the business, the customers, and their product related needs on one side, and the Team on the other.
+The Team is a self-organizing and cross-functional group of people who do the hands-on work of developing and testing the product. Since the Team is responsible for producing the product, it must also have the authority to make decisions about how to perform the work. The Team is therefore self-organizing: Team members decide how to break work into tasks, and how to allocate tasks to individuals, throughout the Sprint. 
+g- What is agile methodology? Agile Development” is an umbrella term for several iterative and incremental software development methodologies. The most popular agile methodologies include Extreme Programming (XP), Scrum, Crystal, Dynamic Systems Development Method (DSDM), Lean Development, and Feature-Driven Development (FDD).
+While each of the agile methodologies is unique in its specific approach, they all share a common vision and core values. They all fundamentally incorporate iteration and the continuous feedback that it provides to successively refine and deliver a software system. They all involve continuous planning, continuous testing, continuous integration, and other forms of continuous evolution of both the project and the software. They are all lightweight, especially compared to traditional waterfall-style processes, and inherently adaptable. What is more important about agile methods is that they all focus on empowering people to collaborate and make decisions together quickly and effectively.
+
+h- what release calender?  A Release Plan that provides an outline of the Sprints, what’s included in each, and an estimated date for the release. 
+
+i- what is release date? The date that changes made in the lowest regions goes to productions.
+
+
+2- give 4 raisons why companies should consider the DevOps method
+Companies that incorporate DevOps practices get more done, plain and simple. With a single team composed of cross-functional members all working in collaboration, DevOps organizations can deliver with maximum speed, functionality, and innovation.
+There are technical benefits:
+•	Continuous (and fast) software delivery
+•	Less complexity to manage, thus More stable operating environments and Faster resolution of problems. This enables Happier, more productive teams.
+
+•	Improved communication and collaboration
+•	More time to innovate (rather than fix/maintain)
+
+
+3- what are some automation tools used in the DevOps environment?
+-	Jenkins: it is an open source continuous integration tool written in Java.
+-	ElectricFlow: it is a single DevOps platform that supports the entire end-to-end software development and delivery process.
+-	XebiaLabs: it is a leading provider of delivery automation software that helps organizations deliver business value faster and more efficiently
+-	Bamboo
+-	TeamCity; is a Java-based build management and continuous integration server from JetBrains
+
+4- why is it important to build the software in the test regions before delevering it to production?
+5- create a project in your github repository called project4 and in project 4 , create a file called project11
+6- copy your homework11 answers into the file project11 and commit it.
+7- What is the url to access your github project11 file?
+
